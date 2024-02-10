@@ -25,23 +25,3 @@ binary_tree_t *binary_tree_node(binary_tree_t *parent, int value){
 
     return (newnode);
 }
-
-int main(){
-
-    binary_tree_t *root = NULL;
-    int value = 10;
-
-    // Create a new node with value 10 and no parent
-    root = binary_tree_node(NULL, value);
-
-    if(root != NULL) {
-        printf("Node created with value: %d\n", root->n);
-    } else {
-        printf("Failed to create node\n");
-    }
-
-
-
-    return 0;
-
-}
