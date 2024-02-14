@@ -11,7 +11,7 @@ size_t _binary_tree_height(const binary_tree_t *tree){
     size_t left , right;
     left = binary_tree_height(tree->left);
     right = binary_tree_height(tree->right);
-    return ((left + right) + 1);
+    return (MAX(left+right) + 1);
 }
 /**
  * binary_tree_height - measures the height of a binary tree
